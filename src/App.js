@@ -16,12 +16,12 @@ class App extends Component {
         <div>
         <Navigator/>        
         <Switch>
-        <Route exact path="/" render={() => <h1> Home </h1>} />
+        <Route exact path="/" render={() => <h1> Home </h1>  }/>
         <Route path="/traininglist"component={Traininglist}/>
         <Route path="/customerlist"component={Customerlist}/>
         <Route path="/calendar"component={Calendar}/>        
         </Switch>
-        
+        <p> Please select "Training", "Customer" or "Calendar" tabs to see the lists</p>
         </div>
         </BrowserRouter>   
       </div>
